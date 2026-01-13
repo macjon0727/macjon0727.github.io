@@ -1,300 +1,473 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Theme Made By www.w3schools.com -->
-    <title>Bootstrap Theme Company Page</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" id="top">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Williams Samuel is a self-taught Frontend and Mobile (Android & IOS - Cross Platform) Developer based in Lagos State, Nigeria, who is passionate about web and mobile development." />
+		<meta
+			name="keywords"
+			content="Frontend Developer, Mobile Developer, Open Source, Freelance Web Developer, Freelance Mobile Developer, React Native Developer, Developer Portfolio" />
 
-    <!--  외부 CDN을 통한 스타일 적용(부트스트랩)  -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<meta name="description" content="Page description" />
+		<meta property="og:title" content="Williams Samuel - Frontend Developer" />
+		<meta
+			property="og:description"
+			content="Williams Samuel is a self-taught Frontend Web Developer based in Lagos State, Nigeria,  who specializes in building exceptional digital experience and passionate about web and mobile development." />
+		<meta
+			property="og:image"
+			content="https://williamssam.netlify.app/assets/santamac.jpg" />
+		<meta property="og:image:alt" content="Williams Samuel" />
+		<meta property="og:locale" content="en_GB" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="og:url" content="https://www.williamssam.netlify.app/" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="robots" content="index, follow" />
 
-    <!--  Local의 JavaScript 적용  -->
-    <script src="js/script.js"></script>
-    <!--  Local의 스타일 적용  -->
-    <link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="./assets/cafemac.jpg" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="binimac" href="./assets/binimac.jpg" />
+		<link rel="stylesheet" href="styles.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#myPage">Logo</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#pricing">PRICING</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+		<!-- boxicons -->
+		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+		<script src="./script.js" defer></script>
+		<title>Minjun Kang - FullStack Developer</title>
+	</head>
+	<body>
+		<!-- only for keyboard users -->
+		<a class="skip-to-content" href="#main-content">Skip to content</a>
 
-<div class="jumbotron text-center">
-    <h1>MinJun Kang's Portfolio</h1>
-    <p>We specialize in blablabla</p>
-    <form>
-        <div class="input-group">
-            <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-            <div class="input-group-btn">
-                <button type="button" class="btn btn-danger">Subscribe</button>
-            </div>
-        </div>
-    </form>
-</div>
+		<header class="main-header">
+			<nav class="nav slide-in-top">
+				<div class="container">
+					<a href="#">
+						<img src="./assets/santamac.jpg" alt="williams" class="logo" />
+						<title>Logo</title>
+					</a>
 
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-    <div class="row">
-        <div class="col-sm-8">
-            <h2>About Company Page</h2><br>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <br><button class="btn btn-default btn-lg">Get in Touch</button>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-signal logo"></span>
-        </div>
-    </div>
-</div>
+					<ul class="nav-list">
+						<li>
+							<a href="#about" class="nav-links hover-effect">About</a>
+						</li>
+						<li>
+							<a href="#skills" class="nav-links hover-effect">Skills</a>
+						</li>
+						<li>
+							<a href="#projects" class="nav-links hover-effect">Projects</a>
+						</li>
+						<li>
+							<a href="#contact" class="nav-links hover-effect">Contact</a>
+						</li>
+					</ul>
 
-<div class="container-fluid bg-grey">
-    <div class="row">
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-globe logo slideanim"></span>
-        </div>
-        <div class="col-sm-8">
-            <h2>Our Values</h2><br>
-            <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-            <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-    </div>
-</div>
+					<ul class="social-nav">
+						<li>
+							<a href="https://www.instagram.com/k_macjon/"
+							rel="noreferrer"
+							target="_blank"
+							aria-label="link to instagram profile">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" style="fill: currentColor">
+									<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849s-.011 3.584-.069 4.849c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.849-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849s.012-3.584.07-4.849c.149-3.249 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.337 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.351-.2 6.78-2.618 6.98-6.98.058-1.281.072-1.689.072-4.948s-.014-3.667-.072-4.947c-.2-4.352-2.612-6.78-6.98-6.98-1.28-.058-1.689-.072-4.948-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+								</svg>
+							</a>
+						</li>
 
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-    <h2>SERVICES</h2>
-    <h4>What we offer</h4>
-    <br>
-    <div class="row slideanim">
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-off logo-small"></span>
-            <h4>POWER</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-heart logo-small"></span>
-            <h4>LOVE</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-lock logo-small"></span>
-            <h4>JOB DONE</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-    </div>
-    <br><br>
-    <div class="row slideanim">
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-leaf logo-small"></span>
-            <h4>GREEN</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-certificate logo-small"></span>
-            <h4>CERTIFIED</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-wrench logo-small"></span>
-            <h4 style="color:#303030;">HARD WORK</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-    </div>
-</div>
+						<li>
+							<a href="https://velog.io/@macjon/posts"
+							rel="noreferrer"
+							target="_blank"
+							aria-label="link to velog blog">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" style="fill: currentColor">
+									<path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-9 15H6v-2h5v2zm8-4H6v-2h13v2zm0-4H6V7h13v2z"></path>
+								</svg>
+							</a>
+						</li>
 
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-    <h2>Portfolio</h2><br>
-    <h4>What we have created</h4>
-    <div class="row text-center slideanim">
-        <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="assets/images/paris.jpg" alt="Paris" width="400" height="300">
-                <p><strong>Paris</strong></p>
-                <p>Yes, we built Paris</p>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="assets/images/newyork.jpg" alt="New York" width="400" height="300">
-                <p><strong>New York</strong></p>
-                <p>We built New York</p>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="assets/images/sanfran.jpg" alt="San Francisco" width="400" height="300">
-                <p><strong>San Francisco</strong></p>
-                <p>Yes, San Fran is ours</p>
-            </div>
-        </div>
-    </div><br>
+						<li>
+							<a href="https://github.com/macjon0727?tab=repositories"
+							rel="noreferrer"
+							target="_blank"
+							aria-label="link to github account">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" style="fill: currentColor">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path>
+								</svg>
+							</a>
+						</li>
+					</ul>
 
-    <h2>What our customers say</h2>
-    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+					<div class="hamburger">
+						<div class="line-menu half start"></div>
+						<div class="line-menu"></div>
+						<div class="line-menu half end"></div>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
-            </div>
-            <div class="item">
-                <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
-            </div>
-            <div class="item">
-                <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
-            </div>
-        </div>
+		<main id="main-content">
+			<!-- hero section -->
+			<section class="hero">
+				<div class="container">
+					<article class="hero-text bounce-in-left">
+						<div>
+							<p class="subtitle">hi there 👋🏽, i'm</p>
+							<h1 class="name">Minjun Kang</h1>
+						</div>
+						<div>
+							<p class="intro">
+								홍익대학교 소프트웨어융합학과 4학년에 재학 중인 예비 개발자입니다.
+							</p>
 
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</div>
+							<div class="hero-btn-container">
+								<a href="mailto:coja0727@naver.com" class="btn hire-btn">
+									Hire Me
+								</a>
+								<!-- <a href="#" download="" class="btn download-link"
+									>Download CV</a
+								> -->
+							</div>
+						</div>
+					</article>
+					<img
+						src="./assets/coding-ground.png"
+						alt="coding desk"
+						class="fade-in code" />
+				</div>
+			</section>
 
-<!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
-    <div class="text-center">
-        <h2>Blog Link</h2>
-        <h4>Choose a payment plan that works for you</h4>
-    </div>
-    <div class="row slideanim">
-        <div class="col-sm-4 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Basic</h1>
+			<!-- about section -->
+			<section class="about-me" id="about">
+				<div class="container" data-aos="fade-up">
+					<img src="./assets/binimac.jpg" alt="Minjun profile" />
+					<article>
+						<p class="subtitle">Who is Minjun Kang?</p>
+						<h2 class="title">About Me</h2>
+							<div class="about">
+								<p>
+									안녕하세요! 홍익대학교에서 소프트웨어융합을 전공하고 있는 4학년 강민준입니다. 
+									부산에서 올라온 부산싸나이💪이며, 나이는 02년생 반오십입니다.👴
+								</p>
+
+								<p>
+									저는 현재 <strong>메타버스 웹반</strong>에 소속되어 새로운 디지털 환경을 구축하는 데 엄청난 열정을 가지고 몰입하고 있습니다.🔥
+								</p>
+								
+								<p>
+									취미로는 농구를 즐기며🏀, 작년에는 저희 과 농구 소모임 회장으로 활동하기도 했습니다. 
+									저와 함께 프로젝트를 하거나, 혹은 같이 농구 한 게임 하실 분들은 언제든 
+									<strong>상단 인스타 주소로 DM</strong> 부탁드립니다🙏
+								</p>
+
+								<p>
+									ps. 벨로그 맞팔해요~ 소통해요~ 🧑‍🤝‍🧑
+								</p>
+							</div>
+					</article>
+				</div>
+			</section>
+
+			<!-- my skills -->
+			<section class="my-skills" id="skills" data-aos="fade-up">
+				<div class="container">
+					<article>
+						<p class="subtitle">My Skills</p>
+						<h2 class="title">Technologies I Work With</h2>
+						<p class="info">
+							홍익대학교에서 전공 지식을 쌓으며, 현재는 <strong>메타버스 웹반</strong>에 소속되어 
+							실제적인 웹 개발 역량을 키우고 있습니다. 최근 프로젝트에서 주로 활용한 기술과 개발 환경입니다.
+						</p>
+					</article>
+
+					<div class="skills-flex-container" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 40px;">
+						
+						<div class="skill-box" style="flex: 1; min-width: 300px; background: #112240; border: 1px solid #233554; border-radius: 15px; padding: 30px; text-align: center;">
+							<h3 style="color: #64ffda; margin-bottom: 25px; font-size: 1.5rem; border-bottom: 1px solid #233554; padding-bottom: 15px;">Languages</h3>
+							
+							<div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+								<span style="background: #e1f5fe; color: #01579b; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 1.1rem;">Java</span>
+								<span style="background: #e1f5fe; color: #01579b; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 1.1rem;">Python</span>
+								<span style="background: #e1f5fe; color: #01579b; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 1.1rem;">C</span>
+								<span style="background: #e1f5fe; color: #01579b; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 1.1rem;">HTML/CSS</span>
+								<span style="background: #e1f5fe; color: #01579b; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 1.1rem;">R</span>
+								<span style="background: #e1f5fe; color: #01579b; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 1.1rem;">SQL</span>
+							</div>
+						</div>
+
+						<div class="skill-box" style="flex: 1; min-width: 300px; background: #112240; border: 1px solid #233554; border-radius: 15px; padding: 30px; text-align: center;">
+							<h3 style="color: #64ffda; margin-bottom: 25px; font-size: 1.5rem; border-bottom: 1px solid #233554; padding-bottom: 15px;">Tools</h3>
+							
+							<div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+								<span style="background: #e8f5e9; color: #1b5e20; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 1.1rem;">Oracle</span>
+								<span style="background: #f3e5f5; color: #4a148c; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 1.1rem;">Github</span>
+								<span style="background: #f3e5f5; color: #4a148c; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 1.1rem;">IntelliJ</span>
+								<span style="background: #f3e5f5; color: #4a148c; padding: 10px 20px; border-radius: 25px; font-weight: bold; font-size: 1.1rem;">VS Code</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- projects section -->
+			<section class="projects-section" id="projects">
+				<div class="container">
+					<article data-aos="fade-up">
+						<p class="subtitle">My projects</p>
+						<h2 class="title">Some Things I Built</h2>
+						<p class="info">
+							나날이 성장하는 모습 지켜봐 주세요😎
+						</p>
+					</article>
+					<section class="projects">
+						<!-- 01 -->
+						<article class="project">
+							<a
+								href="#"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img">
+								<img
+									src="./assets/ideal.jpg" 
+									alt="이상형 매칭 시스템 스크린샷"
+									title="이상형 매칭 시스템"
+									style="background-color: #233554; min-height: 250px; display: block;" 
+								/>
+								</a>
+
+							<div>
+								<h3>01</h3>
+								<h2>이상형 매칭 시스템</h2>
+								<p>
+									사용자의 선호도와 특성 데이터를 분석하여 최적의 파트너를 연결해주는 시스템입니다. 
+									데이터베이스 정규화 과정을 거친 효율적인 테이블 설계와 복잡한 조건문을 
+									활용한 매칭 알고리즘 구현을 중심으로 개발되었습니다.
+								</p>
+								<ul class="tech-stack">
+									<li>Oracle DB</li>
+									<li>SQL</li>
+									<li>Database Design</li>
+									<li>JDBC</li>
+								</ul>
+								<ul class="project-links">
+									<li>
+										<a href="#" target="_blank" rel="noreferrer" class="hover-effect">
+											Live Site →
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" rel="noreferrer" class="hover-effect">
+											Github →
+										</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+
+						<!-- 02 -->
+						<article class="project">
+							<a
+								href="#"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img">
+								<img
+									src="./assets/hongtalk.jpg" 
+									alt="Multi-Chat Program Screenshot"
+									title="Multi-Chat Program"
+									style="background-color: #233554; min-height: 250px; display: block;" 
+								/>
+							</a>
+
+							<div>
+								<h3>02</h3>
+								<h2>강&류 HongTalk - 멀티채팅 앱</h2>
+								<p>
+									Java Swing과 소켓 통신(TCP/IP)을 활용하여 구현한 실시간 다중 사용자 채팅 애플리케이션입니다. 
+									Server-Client 구조를 이해하고, 멀티스레딩(Multi-threading) 기술을 통해 여러 클라이언트가 
+									동시에 접속해도 데이터 지연 없이 메시지를 주고받을 수 있도록 개발되었습니다.
+								</p>
+								<ul class="tech-stack">
+									<li>Java</li>
+									<li>Socket Programming</li>
+									<li>Multi-threading</li>
+									<li>Swing UI</li>
+								</ul>
+								<ul class="project-links">
+									<li>
+										<a href="#" target="_blank" rel="noreferrer" class="hover-effect">
+											Live Site →
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" rel="noreferrer" class="hover-effect">
+											Github →
+										</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+
+						<!-- 03 -->
+						<article class="project">
+							<a
+								href="#"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img">
+								<img
+									src="./assets/119.jpg" 
+									alt="119 신고 건수 예측 프로젝트 스크린샷"
+									title="119 Report Prediction"
+									style="background-color: #233554; min-height: 250px; display: block;" 
+								/>
+							</a>
+
+							<div>
+								<h3>03</h3>
+								<h2>119 신고 건수 예측</h2>
+								<p>
+									공공 빅데이터를 활용하여 시간대별, 지역별 119 신고 발생 가능성을 예측하는 머신러닝 모델입니다. 
+									Python의 Pandas와 Scikit-learn을 사용하여 데이터를 전처리하고, 회귀 분석 및 시계열 알고리즘을 
+									적용하여 소방 자원의 효율적인 배치를 돕는 인사이트를 도출했습니다.
+								</p>
+								<ul class="tech-stack">
+									<li>Python</li>
+									<li>Machine Learning</li>
+									<li>Pandas</li>
+									<li>Scikit-learn</li>
+									<li>Data Visualization</li>
+								</ul>
+								<ul class="project-links">
+									<li>
+										<a href="#" target="_blank" rel="noreferrer" class="hover-effect">
+											Analysis Report →
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" rel="noreferrer" class="hover-effect">
+											Github →
+										</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+
+						<!-- 04 -->
+						<article class="project">
+							<a
+								href="#"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img">
+								<img
+									src="./assets/parking.jpg" 
+									alt="불법주정차 요인 분석 프로젝트 스크린샷"
+									title="Illegal Parking Factor Analysis"
+									style="background-color: #233554; min-height: 250px; display: block;" 
+								/>
+							</a>
+
+							<div>
+								<h3>04</h3>
+								<h2>공간복잡도에 따른 불법 주정차 요인분석 - 송파구</h2>
+								<p>
+									RStudio를 활용하여 도시의 공간복잡도 데이터와 불법주정차 발생 건수 사이의 상관관계를 분석한 통계 프로젝트입니다. 
+									다중회귀분석을 통해 주정차 위반에 영향을 미치는 주요 요인을 식별하고, 데이터 시각화를 통해 
+									도시 계획 및 문제 해결을 위한 정량적 근거를 제시했습니다.
+								</p>
+								<ul class="tech-stack">
+									<li>R Language</li>
+									<li>RStudio</li>
+									<li>Statistics</li>
+									<li>Data Visualization</li>
+									<li>Spatial Analysis</li>
+								</ul>
+								<ul class="project-links">
+									<li>
+										<a href="#" target="_blank" rel="noreferrer" class="hover-effect">
+											Research Paper →
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" rel="noreferrer" class="hover-effect">
+											Github →
+										</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+
+						<!-- 05 -->
+						<article class="project" style="opacity: 0.7;">
+                            <div class="project-img" style="background: #112240; min-height: 250px; border: 2px dashed #233554; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                                <span style="color: #8892b0; font-family: 'Fira Code', monospace; font-size: 1.2rem;">Next Project Coming Soon...</span>
+                            </div>
+                            <div>
+                                <h3>05</h3>
+                                <h2>New Project in Progress</h2>
+                                <p>
+                                    현재 새로운 프로젝트를 기획 및 개발 중입니다. 
+                                    데이터 분석과 웹 기술을 접목한 더 멋진 결과물로 곧 업데이트하겠습니다.
+                                </p>
+                                <ul class="tech-stack">
+                                    <li>Analyzing</li>
+                                    <li>Coding</li>
+                                    <li>Learning</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </section> 
+
+					<!-- other-noteworthy-project -->
+                    <section class="other-noteworthy-project" data-aos="fade-up">
+                        <h3>Other Noteworthy Projects</h3>
+                        <ul class="other-projects">
+                            <li style="border: 1px dashed #233554; padding: 30px; border-radius: 10px; list-style: none; text-align: center;">
+                                <div style="color: #495670; padding: 20px 0;">
+                                    <i class="far fa-folder" style="font-size: 2rem; margin-bottom: 10px; display: block;"></i>
+                                    <p>To be updated</p>
+                                </div>
+                            </li>
+                            <li style="border: 1px dashed #233554; padding: 30px; border-radius: 10px; list-style: none; text-align: center;">
+                                <div style="color: #495670; padding: 20px 0;">
+                                    <i class="far fa-folder" style="font-size: 2rem; margin-bottom: 10px; display: block;"></i>
+                                    <p>To be updated</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+					
+			<!-- contact section -->
+			<section class="contact" data-aos="fade-up">
+                <div class="container">
+                    <p class="subtitle">Have a project? or just looking to hire?</p>
+                    <h2 class="title">Let's Work Together</h2>
+                    <p class="info">
+                        Feel free to reach out if you're looking to hire, just want to
+                        connect or see if we can build something amazing together.
+                    </p>
+
+                    <div>
+                        <a href="mailto:coja0727@naver.com" class="mail-link hover-effect">
+                            Get in touch →
+                        </a>
+                    </div>
                 </div>
-                <div class="panel-body">
-                    <p><strong>20</strong> Lorem</p>
-                    <p><strong>15</strong> Ipsum</p>
-                    <p><strong>5</strong> Dolor</p>
-                    <p><strong>2</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
-                </div>
-                <div class="panel-footer">
-                    <h3>$19</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
-                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="contact">
+            <div class="container" style="display: flex; justify-content: center; padding: 40px 0;">
+                <p>&copy; <span id="date"></span> 강민준. All rights reserved.</p>
             </div>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Pro</h1>
-                </div>
-                <div class="panel-body">
-                    <p><strong>50</strong> Lorem</p>
-                    <p><strong>25</strong> Ipsum</p>
-                    <p><strong>10</strong> Dolor</p>
-                    <p><strong>5</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
-                </div>
-                <div class="panel-footer">
-                    <h3>$29</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Premium</h1>
-                </div>
-                <div class="panel-body">
-                    <p><strong>100</strong> Lorem</p>
-                    <p><strong>50</strong> Ipsum</p>
-                    <p><strong>25</strong> Dolor</p>
-                    <p><strong>10</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
-                </div>
-                <div class="panel-footer">
-                    <h3>$49</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        </footer>
 
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-    <h2 class="text-center">CONTACT</h2>
-    <div class="row">
-        <div class="col-sm-5">
-            <p>Contact us and we'll get back to you within 24 hours.</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-            <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-        </div>
-        <div class="col-sm-7 slideanim">
-            <div class="row">
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                </div>
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                </div>
-            </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-            <div class="row">
-                <div class="col-sm-12 form-group">
-                    <button class="btn btn-default pull-right" type="submit">Send</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
-<footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
-    <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
-</footer>
-
-
-
-</body>
+        </body>
 </html>
