@@ -264,6 +264,23 @@ small {
 /*******************
 		HEADER
 *************************/
+
+/* 상단 네비게이션 고정 */
+header {
+    position: fixed;      /* 스크롤 해도 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;        /* 다른 요소들보다 항상 위에 */
+    background-color: rgba(0, 0, 0, 0.8); /* 반투명 다크 배경 */
+    backdrop-filter: blur(10px);          /* 배경 흐림 효과 (고급스러움) */
+    border-bottom: 1px solid #333;        /* 하단 경계선 */
+}
+
+/* 고정된 헤더 때문에 본문이 가려지지 않게 여백 추가 */
+body {
+    padding-top: 70px; /* 헤더 높이만큼 적절히 조절하세요 */
+}
 .nav {
 	width: 100%;
 	padding: 0 1rem;
@@ -330,6 +347,12 @@ small {
 .social-nav a:hover {
 	background: var(--accent-other-clr);
 	color: var(--secondary-clr);
+}
+
+/* 모든 섹션에 헤더 높이만큼의 여백을 설정합니다. */
+section {
+    /* 만약 헤더 높이가 70px라면, 80px~90px 정도 여유있게 주면 제목이 안 가려집니다. */
+    scroll-margin-top: 70px; 
 }
 
 /*******************
@@ -951,3 +974,4 @@ small {
     color: #888;
     font-style: italic;
 }
+
