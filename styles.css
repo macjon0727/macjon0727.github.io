@@ -62,8 +62,10 @@
 
 /* Set core root defaults */
 @media screen and (prefers-reduced-motion: no-preference) {
+	/* 부드러운 스크롤 및 여백 확보 */
 	html {
-		scroll-behavior: smooth;
+		scroll-behavior: smooth !important;
+		scroll-padding-top: 100px; /* 클릭 시 헤더에 안 가려지게 여유있게 100px */
 	}
 }
 
@@ -267,14 +269,14 @@ small {
 
 /* 상단 네비게이션 고정 */
 header {
-    position: fixed;      /* 스크롤 해도 고정 */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;        /* 다른 요소들보다 항상 위에 */
-    background-color: rgba(0, 0, 0, 0.8); /* 반투명 다크 배경 */
-    backdrop-filter: blur(10px);          /* 배경 흐림 효과 (고급스러움) */
-    border-bottom: 1px solid #333;        /* 하단 경계선 */
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9); /* 0.8보다 조금 더 진하게 */
+    backdrop-filter: blur(15px);          /* 블러 효과 강화 */
+    border-bottom: 1px solid #222;
 }
 
 /* 고정된 헤더 때문에 본문이 가려지지 않게 여백 추가 */
@@ -347,12 +349,6 @@ body {
 .social-nav a:hover {
 	background: var(--accent-other-clr);
 	color: var(--secondary-clr);
-}
-
-/* 모든 섹션에 헤더 높이만큼의 여백을 설정합니다. */
-section {
-    /* 만약 헤더 높이가 70px라면, 80px~90px 정도 여유있게 주면 제목이 안 가려집니다. */
-    scroll-margin-top: 70px; 
 }
 
 /*******************
@@ -450,40 +446,78 @@ section {
 }
 
 /*******************
-		ABOUT SECTION
+        ABOUT SECTION
 *************************/
 .about-me {
-	margin-block-start: var(--section-mt);
-	background: var(--secondary-clr);
-	padding: var(--section-mt) 1rem;
+    /* 배경을 검정으로 통일 */
+    background: var(--primary-clr); 
+    padding: var(--section-mt) 1rem;
+    margin-block-start: var(--section-mt);
 }
 
 .about-me .container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	place-items: center;
-	gap: 8rem;
-	position: relative;
+    display: grid;
+    /* 이미지와 글의 비율 조정 */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    gap: 5rem; /* 간격을 살짝 좁힘 */
+    position: relative;
 }
 
 .about-me img {
-	align-self: end;
-	justify-self: end;
-	width: 425px;
-	box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.006),
-		0px 0px 5.3px rgba(0, 0, 0, 0.008), 0px 0px 10px rgba(0, 0, 0, 0.01),
-		0px 0px 17.9px rgba(0, 0, 0, 0.012), 0px 0px 33.4px rgba(0, 0, 0, 0.014),
-		0px 0px 80px rgba(0, 0, 0, 0.02);
-	/* filter: brightness(0.8); */
+    width: 100%;
+    max-width: 400px; /* 이미지 크기 최적화 */
+    border-radius: 20px; /* 이미지도 카드처럼 둥글게 */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
-.about {
-	padding-block-start: 1.25rem;
+/* --- 여기서부터 새로운 카드 그리드 스타일 --- */
+
+.about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* 카드 사이 간격 */
+    margin-top: 2.5rem;
 }
 
-.about p {
-	padding-block-start: 2rem;
-	line-height: 1.8;
+.about-card {
+    background: #1a1a1a; /* 카드 배경: 배경보다 살짝 밝게 */
+    border: 1px solid #333; /* 은은한 테두리 */
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+
+.about-card.highlight {
+    /* border-left: 4px solid var(--accent-clr); */
+    background: #222;
+}
+
+
+.about-card:hover {
+    transform: translateY(-5px); /* 살짝 들리는 효과 */
+    border-color: var(--accent-clr);
+}
+
+.tag {
+    font-size: 1.1rem;
+    color: var(--accent-clr);
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    display: block;
+}
+
+.about-card p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.ps {
+    margin-top: 1rem !important;
+    font-size: 1.2rem;
+    color: var(--other-clr) !important;
 }
 
 /*******************
@@ -975,3 +1009,9 @@ section {
     font-style: italic;
 }
 
+
+/* 맨 아래에 추가 */
+section {
+    /* 클릭 시 헤더 높이(약 70~80px)보다 조금 더 여유있게 100px 띄웁니다 */
+    scroll-margin-top: 80px !important;
+}
